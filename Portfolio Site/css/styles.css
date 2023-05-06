@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --white-color: lightgray;
+    --text-color: gray; 
+
+    --link-color: #022d3d;
+    --hover-color: pink;
+    --visited-color: purple;
+    --active-color: #25556a;
+    --bottom-border: rgb(207, 204, 204);
+
+    --spire-color_change_0: #F5F0F0;
+    --spire-color_change_50: #FCFFAD;
+    --spire-color_change_100: #f76414;
+    --sky-color_change_0: #046b7e;
+    --sky-color_change_50: #0392ac;
+    --sky-color_change_100: #DFF1FF;
+
+    --grid__item__color: rgb(190, 190, 190);
+    --grid__item__color__hover: rgb(212, 212, 212);
+    --grid__item__box-shadow: rgb(141, 139, 139);
+
+    --headings-font-weight: 700;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--headings-font-weight);
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--headings-font-weight);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--headings-font-weight);
+  color: var(--primary-color);
+}
+
+a {
+  color:var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-color);
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--hover-color);
+}
+
+a:active {
+  color: var(--active-color);
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--bottom-border);
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer, .about-container, .cv-button, .centered-content, .contact-footer, .work-heading {
+  clear: both;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--bottom-border);
+  margin-bottom: 5%;
+  color: var(--bottom-border);
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list, ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.grid__item {
+  background-color: var(--grid__item__color);
+  box-shadow: 0 3px 10px var(--grid__item__box-shadow);
+}
+
+.grid__item:hover {
+  background-color: var(--grid__item__color__hover); 
+  box-shadow: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; 
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }   
+}
+
+button,.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--bottom-border);
+  transition: opacity 0.2s;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.about-image__container {
+  text-align: center;
+}
+
+.about-image {
+  width: 15%;
+  height: auto;
+}
+
+@keyframes spire-color_change {
+  0% {
+    fill: var(--spire-color_change_0);
+  }
+  50% {
+    fill: var(--spire-color_change_50);
+  }
+  100% {
+    fill: var(--spire-color_change_100);
+  }
+}
+
+.sun_rays {
+  animation: 4s spire-color_change infinite alternate linear;
+}
+
+@keyframes sky-color_change {
+  0% {
+    fill: var(--sky-color_change_0);
+  }
+  50% {
+    fill: var(--sky-color_change_50);
+  }
+  100% {
+    fill: var(--sky-color_change_100);
+  }
+}
+
+.sky {
+  animation: 4s sky-color_change infinite alternate linear;  
+}
+
+
+
