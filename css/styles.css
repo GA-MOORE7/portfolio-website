@@ -1,27 +1,23 @@
 :root {
-    --primary-color: #357b70;
-    --secondary-color: #e0b354;
-    --white-color: lightgray;
-    --text-color: gray; 
-
-    --link-color: #022d3d;
-    --hover-color: pink;
-    --visited-color: purple;
-    --active-color: #25556a;
-    --bottom-border: rgb(207, 204, 204);
-
-    --spire-color_change_0: #F5F0F0;
-    --spire-color_change_50: #FCFFAD;
-    --spire-color_change_100: #f76414;
-    --sky-color_change_0: #046b7e;
-    --sky-color_change_50: #0392ac;
-    --sky-color_change_100: #DFF1FF;
-
-    --grid__item__color: rgb(190, 190, 190);
-    --grid__item__color__hover: rgb(212, 212, 212);
-    --grid__item__box-shadow: rgb(141, 139, 139);
-
-    --headings-font-weight: 700;
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --white-color: lightgray;
+  --text-color: gray; 
+  --link-color: #022d3d;
+  --hover-color: pink;
+  --visited-color: purple;
+  --active-color: #25556a;
+  --bottom-border: rgb(207, 204, 204);
+  --spire-color_change_0: #F5F0F0;
+  --spire-color_change_50: #FCFFAD;
+  --spire-color_change_100: #f76414;
+  --sky-color_change_0: #046b7e;
+  --sky-color_change_50: #0392ac;
+  --sky-color_change_100: #DFF1FF;
+  --grid__item__color: rgb(190, 190, 190);
+  --grid__item__color__hover: rgb(212, 212, 212);
+  --grid__item__box-shadow: rgb(141, 139, 139);
+  --headings-font-weight: 700;
 }
 
 body {
