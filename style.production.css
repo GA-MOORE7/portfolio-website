@@ -187,9 +187,12 @@ button:hover, button:focus {
 }
 
 .grid__item:hover {
-  background-color: rgb(212, 212, 212); 
+  background-color: rgb(240, 235, 235); 
   -webkit-box-shadow: none; 
           box-shadow: none;
+  .app_screenshot {
+    box-shadow: 0 0 10px 0 rgb(228, 156, 211);
+  }
 }
 
 .grid {
@@ -295,9 +298,9 @@ button:focus,
   transform:scale(2);
 }
 
-.app_screenshot {
+/* .app_screenshot {
   box-shadow: 0 0 10px 0 rgb(228, 156, 211);
-}
+} */
   
 @-webkit-keyframes spire-color_change {
   0% {
