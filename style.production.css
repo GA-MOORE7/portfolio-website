@@ -13,6 +13,11 @@ body {
   color: rgb(3, 88, 88);
   background-color: rgb(222, 239, 255);
   }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+  }
   
 h1 {
   font-size: 30px;
@@ -34,6 +39,7 @@ h3 {
   
 a {
   color:#022d3d;
+  position: row;
 }
   
 a:visited {
@@ -83,20 +89,16 @@ button:hover, button:focus {
 }
   
 .page-footer, .about-container, .cv-button, .centered-content, .contact-footer, .work-heading, .grid__item {
-  clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: vertical; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: column; 
-          flex-direction: column;
   text-align: center;
+  max-width: 500px;
+  position: center;
+  margin: auto;
 }
 
 .index-page-content {
   display: grid;
   position: center;
+  margin-top: 200px;
 }
 
 .about-container {
@@ -142,6 +144,9 @@ button:hover, button:focus {
   margin-bottom: 5%;
   color: rgb(207, 204, 204);
   background-image: linear-gradient(180deg, rgb(233, 194, 224), rgb(195, 224, 252));
+  position: fixed;
+  top: 0;
+  left: 0;
 }
   
 .page-header__item {
@@ -281,16 +286,17 @@ button:focus,
 
 .app_screenshot {
   transition: transform .2s;
-  /* width:50px;
-  height:50px; */
-  /* margin:0 auto; */
   background-color: rgb(173, 173, 237);
   border-radius: 10px;
   border: 1px solid rgb(236, 210, 160);
 }
 
-.app_screenshot:hover{
+.app_screenshot:active{
   transform:scale(2);
+}
+
+.app_screenshot {
+  box-shadow: 0 0 10px 0 rgb(228, 156, 211);
 }
   
 @-webkit-keyframes spire-color_change {
